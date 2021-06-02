@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+img{
+    width: 300px;
+}
+
+#logo{
+    width: 50px;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,50,0.5),rgba(4,9,50,0.7)),url(images/tfscover.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+nav{
+    display: flex;
+    padding: 2px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    padding: 2px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 16px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background: orange;
+    transition: 0.5s;
+    }
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid orange;
+    background: orange;
+    transition: 1s;
+
+}
+
+.container{
+    border: 2px solid darkred;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(180, 174, 235);
+}
+
+.item{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.question{
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid blue;
+
+}
+#wanttojoin{
+    text-align: center;
+    background-color: orange;
+}
+
+#contact-us{
+    text-align: center;
+    background-color: lightyellow;
+
+}
+
+.form-fill{
+    border: 5px solid green;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 300px;
+    background-color: lightgreen;
+}
+
+.form-items{
+    justify-content: center;
+}
+
+#button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ margin-left: 12px;
+}
+
+.interest{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .text-box p{
+        margin: 10px;
+        font-size: 14px;
+        color: white;
+    }
+    .nav-links ul li{
+    display: block;
+    }
+    .nav-links{
+    flex: 1;
+    text-align: right;
+    }
+}
